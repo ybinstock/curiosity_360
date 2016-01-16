@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Curiosity 360</title>
+  <meta name="description" content="Curiosity 360">
+  <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
+
+</head>
+<body>
+
+<a-scene>
+  <a-entity position="0 1.8 5" rotation="0 240 0">
+    <a-entity camera look-controls wasd-controls-enabled="false"></a-entity>
+  </a-entity>
+
+
+  <a-sky src="curiosity.jpg"></a-sky>
+
+  <a-entity id="mars" visible="false" geometry="primitive: plane" material="color: blue"
+            position="-10 0 0" width="1" height="1"
+            sound="src: audio_curiosity.mov; autoplay: true; loop: true"></a-entity>
+  <a-curvedimage src="habitat.jpg" radius="5.7" theta-length="72" height="2.52" rotation="0 320 0" scale="0.8 0.8 0.8" position="0 1.2 0" opacity=".4"></a-curvedimage>
+  <a-curvedimage src="habitat2.jpg" radius="5.7" theta-length="72" height="4.52" rotation="0 320 0" scale="0.8 0.8 0.8" position="15 1.2 4" opacity=".4"></a-curvedimage>
+
+</a-scene>
+</body>
+</html>
